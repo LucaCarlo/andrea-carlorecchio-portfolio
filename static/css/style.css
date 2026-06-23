@@ -474,6 +474,13 @@ section {
 }
 
 /* ===== Experience Section ===== */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
 .achievement-highlight {
     display: flex;
     align-items: center;
@@ -482,7 +489,6 @@ section {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     padding: 30px 40px;
     border-radius: 16px;
-    margin-bottom: 60px;
     color: var(--white);
 }
 
@@ -1008,6 +1014,10 @@ section {
     .stat-card {
         max-width: 100%;
         width: 100%;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
     }
 
     .achievement-highlight {
